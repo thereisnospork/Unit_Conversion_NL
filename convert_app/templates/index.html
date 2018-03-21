@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test form here</title>
+</head>
+<body>
+<h1>Natural Language Unit Conversion rev 0.1</h1>
+<form action="" method="POST">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Convert Me" />
+
+</form>
+
+<!--<form action="" method="get">-->
+    <!--{% csrf_token %}-->
+    <!--{{ form_to }}-->
+    <!--<input type="submit" value="" />-->
+
+<!--</form>-->
+Input interpreted as:<br/>
+{{ in_val }} {{ in_name }} <br/>
+Converted to: <br/>
+{{ out_val }} {{ out_name }}
+{{ error }}
+</body>
+</html>
